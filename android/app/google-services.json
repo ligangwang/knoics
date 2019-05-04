@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "108363281300",
+    "firebase_url": "https://knoics-3ad50.firebaseio.com",
+    "project_id": "knoics-3ad50",
+    "storage_bucket": "knoics-3ad50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108363281300:android:800e6f4475d0f65f",
+        "android_client_info": {
+          "package_name": "com.sciempirica.knoics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108363281300-m5hojnboibjabra5b0r3qt4tfdvh1p8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sciempirica.knoics",
+            "certificate_hash": "3e7c9c4a9eb2c8a74282cdc07563b9285c2d5991"
+          }
+        },
+        {
+          "client_id": "108363281300-4420r1eet4g1l1ttrrbu8nudktre66te.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAccFF6eIbSEtPoNSfV5I5zMOPEeX8-QVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108363281300-4420r1eet4g1l1ttrrbu8nudktre66te.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
