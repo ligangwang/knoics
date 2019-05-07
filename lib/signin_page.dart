@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'authentication.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'user.dart';
 
 
 class SigninPage extends StatelessWidget{
@@ -15,7 +15,8 @@ class SigninPage extends StatelessWidget{
     );
   }
 
-  void _handleSignin(){
-    auth.signInWithGoogle().then((FirebaseUser user)=>print('HI ${user.displayName}'));
+  void _handleSignin() async {
+    User user = await auth.signInWithGoogle();
+    print('HI ${user.displayName}');
   }
 } 

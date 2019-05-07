@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'signin_page.dart';
+import 'home_page.dart';
 
 void main() => runApp(KnoicsApp());
 
@@ -21,7 +21,7 @@ class KnoicsApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blueGrey,
       ),
-      home: SigninPage(),
+      home: HomePage(),
     );
   }
 }
