@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget{
       body: Center(
         child: Row(
           children: <Widget>[
-            Text('Hello $userName'),
+            FlatButton(child: Text('$userName'), onPressed: (){Navigator.pushNamed(context, '/user');},),
             RaisedButton(child: Text("Sign Out"), onPressed: (){User.signOut(); print('signed out'); Navigator.pushNamed(context, '/');},)
           ],
         ),
