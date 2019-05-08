@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
+import 'user_page.dart';
+import 'user.dart';
+import 'signin_page.dart';
 
 void main() => runApp(KnoicsApp());
 
-class KnoicsApp extends StatelessWidget {
+class KnoicsApp extends StatefulWidget{
+  @override
+  State createState()=>new KnoicsAppState();
+}
+
+class KnoicsAppState extends State<KnoicsApp> {
+  User _user;
+
+  @override
+  void initState(){
+    super.initState();
+    User.onUserChange((user){
+      setState((){_user=user; });
+      print('get user updated: $_user');});
+  }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,7 +39,12 @@ class KnoicsApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blueGrey,
       ),
-      home: HomePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(_user),
+        '/user': (context) => UserPage(_user),
+        '/signin': (context) => SigninPage(),
+      },
     );
   }
 }
