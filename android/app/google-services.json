@@ -38,6 +38,13 @@
             {
               "client_id": "108363281300-4420r1eet4g1l1ttrrbu8nudktre66te.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "108363281300-3ilkoosqglkvl6pn5obua7eqmq6nqa99.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sciempirica.knoics"
+              }
             }
           ]
         }
