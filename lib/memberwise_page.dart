@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user.dart';
+import 'data/user.dart';
 import 'signin_page.dart';
 
 abstract class MemberwisePage extends StatelessWidget{

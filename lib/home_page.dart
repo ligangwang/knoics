@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user.dart';
+import 'data/user.dart';
 import 'memberwise_page.dart';
 
 class HomePage extends MemberwisePage{
@@ -11,7 +11,7 @@ class HomePage extends MemberwisePage{
       child: Row(
         children: <Widget>[
           FlatButton(child: Text('${user.displayName}'), onPressed: (){Navigator.pushNamed(context, '/user');},),
-          FlatButton(child: Text('go to concepts'), onPressed: (){Navigator.pushNamed(context, '/concept');},),
+          FlatButton(child: Text('Concepts'), onPressed: (){Navigator.pushNamed(context, '/concept');},),
           RaisedButton(child: Text("Sign Out"), onPressed: (){User.signOut(); print('signed out'); Navigator.pushNamed(context, '/');},)
         ],
       ),

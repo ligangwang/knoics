@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user.dart';
+import 'data/user.dart';
 import 'memberwise_page.dart';
 
 class UserPage extends MemberwisePage{

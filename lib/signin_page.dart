@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'authentication.dart';
-import 'user.dart';
+import 'data/user.dart';
 
 
 class SigninPage extends StatelessWidget{

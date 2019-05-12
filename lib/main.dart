@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'user_page.dart';
-import 'user.dart';
+import 'data/app_state.dart';
 import 'concept_page.dart';
 
 void main() => runApp(KnoicsApp());
@@ -12,13 +12,16 @@ class KnoicsApp extends StatefulWidget{
 }
 
 class KnoicsAppState extends State<KnoicsApp> {
-  User _user;
+  AppState _appState = AppState();
 
   @override
   void initState(){
     super.initState();
-    User.onUserChange((user){
-      setState((){_user=user; });
+    _appState.onUserChange((user){
+      setState((){});
+    });
+    _appState.navigateToConcept('science', (concept){
+      setState((){});
     });
   }
 
@@ -41,9 +44,9 @@ class KnoicsAppState extends State<KnoicsApp> {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(_user),
-        '/user': (context) => UserPage(_user),
-        '/concept': (context) => ConceptPage(_user),
+        '/': (context) => HomePage(_appState.user),
+        '/user': (context) => UserPage(_appState.user),
+        '/concept': (context) => ConceptPage(_appState.user, _appState.concept),
       },
     );
   }
