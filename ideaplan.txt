@@ -1,0 +1,9 @@
+1. Graph Visualizer for graph data structure
+2. Construct graph data structure using wikidata/wikipeida
+3. Add explanations/links for each node and edge
+4. Expand the graph with new triple based on existing nodes (concepts), for example difficulty level, explainations 
+to nodes
+5. Standard learning path
+6. Customized learning path based on user knowledge profile
+
+using progressive and marginal improvement way to achieve goals

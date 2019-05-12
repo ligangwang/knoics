@@ -12,15 +12,12 @@ class KnoicsApp extends StatefulWidget{
 }
 
 class KnoicsAppState extends State<KnoicsApp> {
-  AppState _appState = AppState();
+  UserState _userState = UserState();
 
   @override
   void initState(){
     super.initState();
-    _appState.onUserChange((user){
-      setState((){});
-    });
-    _appState.navigateToConcept('science', (concept){
+    _userState.onUserChange((user){
       setState((){});
     });
   }
@@ -44,9 +41,9 @@ class KnoicsAppState extends State<KnoicsApp> {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(_appState.user),
-        '/user': (context) => UserPage(_appState.user),
-        '/concept': (context) => ConceptPage(_appState.user, _appState.concept),
+        '/': (context) => HomePage(_userState.user),
+        '/user': (context) => UserPage(_userState.user),
+        '/concept': (context) => ConceptPage(),
       },
     );
   }
