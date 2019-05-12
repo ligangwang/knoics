@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'user.dart';
+import 'memberwise_page.dart';
 
-class UserPage extends StatelessWidget{
-  final User _user;
-  UserPage(this._user);
+class UserPage extends MemberwisePage{
+  UserPage(User user) : super(user, 'user');
   
   @override
-  Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(title: Text('User')), 
-      body: Center(child: Text('Hello ${_user.displayName}'),),
-    );
+  Widget buildBody(BuildContext context){
+    return Center(child: Text('Hello user: ${user.displayName}'),);
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 import 'user_page.dart';
 import 'user.dart';
+import 'concept_page.dart';
 
 void main() => runApp(KnoicsApp());
 
@@ -42,6 +43,7 @@ class KnoicsAppState extends State<KnoicsApp> {
       routes: {
         '/': (context) => HomePage(_user),
         '/user': (context) => UserPage(_user),
+        '/concept': (context) => ConceptPage(_user),
       },
     );
   }
