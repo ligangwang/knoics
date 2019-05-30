@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:knoics/graph.dart';
 import 'data/app_state.dart';
 
 
@@ -26,7 +27,7 @@ class _ConceptState extends State<ConceptPage>{
     return Scaffold(
       appBar: AppBar(title: Text('concept')),
       body: Center(
-        child: Text('${_conceptState.concept.description}')
+        child: Graph()//Text('${_conceptState.concept.description}')
       ),
     );
   }
