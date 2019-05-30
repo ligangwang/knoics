@@ -27,7 +27,7 @@ class _ConceptState extends State<ConceptPage>{
     return Scaffold(
       appBar: AppBar(title: Text('concept')),
       body: Center(
-        child: Graph()//Text('${_conceptState.concept.description}')
+        child: GraphWidget(Graph())//Text('${_conceptState.concept.description}')
       ),
     );
   }
