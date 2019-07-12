@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:knoics/graph.dart';
+import 'package:knoics/graph_widget.dart';
 import 'data/app_state.dart';
 
 
