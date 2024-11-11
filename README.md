@@ -1,6 +1,6 @@
 # knoics
 
-A new Flutter project.
+A new finance community app powered by Flutter.
 
 ## Getting Started
 
